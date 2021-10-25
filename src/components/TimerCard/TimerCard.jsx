@@ -1,7 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 
-import { timerCardSetResults } from 'Src/store/TimerCard/timerCardActions';
+import {
+  timerCardSetResults,
+  timerCardSetActive,
+} from 'Src/store/TimerCard/timerCardActions';
 
 import styles from './TimerCard.module.scss';
 
@@ -30,8 +33,17 @@ const TimerCard = () => {
     return fullTime;
   };
 
+  const handleClickButton = () => dispatch(timerCardSetActive(true));
+
   return (
     <div className={styles.timerCard}>
+      <button
+        className={styles.button}
+        onClick={handleClickButton}
+        type="button"
+      >
+        play
+      </button>
       <p className={styles.currentTime}>{convertFullTime(seconds)}</p>
       {results && (
         <ol>

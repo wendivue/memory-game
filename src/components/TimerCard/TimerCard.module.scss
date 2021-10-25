@@ -1,3 +1,5 @@
+@import 'Src/styles/variables';
+
 .timerCard {
   display: flex;
   flex-flow: column;
@@ -6,7 +8,16 @@
 
 .currentTime {
   font-weight: 600;
+  margin-top: 10px;
   margin-bottom: 40px;
+}
+
+.button {
+  padding: 7px 15px;
+  background-color: $purple;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
 }
 
 .item {

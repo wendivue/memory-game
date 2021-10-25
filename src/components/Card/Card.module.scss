@@ -9,6 +9,7 @@
   border: 1px solid #dbdbdb;
   transition: 0.3s;
   transform-style: preserve-3d;
+  cursor: pointer;
 
   &Inverted {
     transform: rotateY(180deg);
@@ -16,6 +17,7 @@
 
   &Hidden {
     opacity: 0;
+    cursor: default;
   }
 
   @media (max-width: $breakpoint-sm) {
