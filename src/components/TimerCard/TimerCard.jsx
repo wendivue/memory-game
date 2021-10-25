@@ -41,6 +41,7 @@ const TimerCard = () => {
         className={styles.button}
         onClick={handleClickButton}
         type="button"
+        disabled={isActive}
       >
         play
       </button>
