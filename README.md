@@ -1,5 +1,7 @@
 # memory-game
 
+[Demo](https://wendivue.github.io/memory-game/)
+
 ## Installing
 
 Install Node Modules: <code>npm i</code>
